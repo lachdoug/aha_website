@@ -26,27 +26,29 @@ hr {
   border-top: 1px solid #2f7ab7;
 }
 .splash {
-  background: url("images/background.png") no-repeat scroll center top #000;
-  background-size: cover;
-  height: 75vh;
-  /*width: 100%;*/
   position: relative;
-  color: white;
+  height: 75vh;
   min-height: 500px;
+  color: white;
   font-size: 1.1em;
-  /*text-shadow:
-    -1px -1px 1px #000,
-    1px -1px 1px #000,
-    -1px 1px 1px #000,
-    1px 1px 1px #000;;*/
-
+}
+.splash-image {
+  background: url("images/background.png") no-repeat scroll center top #000;
+	filter: grayscale(100%);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .splash-tint {
   background-color: #113366BB;
-  height: 75vh;
-  position: relative;
-  min-height: 500px;
-  /*border-bottom: 20px solid #2f7ab7;*/
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .logo-wrapper {
   max-width: 350px;
@@ -70,16 +72,16 @@ hr {
   color: white;
   border-radius: 0px;
 }
-.aha-bullets {
+.no-bullets, .aha-bullets {
   list-style-type: none;
 
 }
 .aha-bullets li::before {
-  content: "•";
+  content: '\2022';
   color: #2f7ab7;
   display: inline-block;
   width: 1em;
-  margin-left: -1em
+  margin-left: -2em;
 }
 
 .aha-bullets li {
@@ -99,26 +101,28 @@ hr {
 <body>
 
 <div class="splash">
-    <div class="splash-tint">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="logo-wrapper">
-                  <img src="images/logo.png" class="logo img-responsive">
-              </div>
-          </div>
-      </div>
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                  <p class="text-center platitude"><i>
-"Alignment&nbsp;of&nbsp;interest and good&nbsp;corporate&nbsp;governance are&nbsp;the&nbsp;foundations&nbsp;of stable,&nbsp;long&#8209;term&nbsp;partnerships in social&nbsp;impact&nbsp;investing."</i></p>
-                  <p class="pull-right">
-                  - Michael Kerans
-                  </p>
-              </div>
-          </div>
-      </div>
+  <div class="splash-image">
+  </div>
+  <div class="splash-tint">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="logo-wrapper">
+                <img src="images/logo.png" class="logo img-responsive">
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <p class="text-center platitude"><i>
+"Alignment&nbsp;of&nbsp;interest and good&nbsp;corporate&nbsp;governance are&nbsp;the&nbsp;foundations&nbsp;of stable,&nbsp;long&#8209;term&nbsp;partnerships in social&nbsp;impact&nbsp;investing."</i></p>
+                <p class="pull-right">
+                - Michael Kerans
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
 </div>
 
 
@@ -135,7 +139,7 @@ hr {
           <div class="col-sm-8 col-sm-offset-2">
             <hr>
             <p>AHA supplies services to:</p>
-                <ul>
+                <ul class="no-bullets">
                     <li>charities and community housing providers; and</li>
                     <li>not-for-profit community housing finance SPVs.</li>
                 </ul>
