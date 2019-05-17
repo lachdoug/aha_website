@@ -16,14 +16,17 @@
   integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
   crossorigin="anonymous"></script>
 
-    <title>Afforable Housing Australia</title>
+    <title>Affordable Housing Australia</title>
 
 <style type="text/css">
 body {
   font-size: 1.66em;
 }
 hr {
-  border-top: 1px solid #2f7ab7;
+  border-top: 1px solid #38C;
+}
+a {
+  color: #38C;
 }
 .splash {
   position: relative;
@@ -43,7 +46,7 @@ hr {
   left: 0;
 }
 .splash-tint {
-  background-color: #113366BB;
+  background-color: rgba(17, 51, 102, 0.75);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -67,6 +70,9 @@ hr {
 .team-member-photo {
     max-width: 125px;
 }
+.fully-justified-text {
+  text-align: justify;
+}
 .well {
   background-color: #113366;
   color: white;
@@ -76,16 +82,18 @@ hr {
   list-style-type: none;
 
 }
+.no-bullets li, .aha-bullets li {
+  margin-bottom: 10px;
+}
 .aha-bullets li::before {
   content: '\2022';
-  color: #2f7ab7;
+  color: #38C;
   display: inline-block;
   width: 1em;
   margin-left: -2em;
 }
-
-.aha-bullets li {
-  margin-bottom: 10px;
+.advisory_committee-member {
+ margin: 30px 0px;
 }
 .footer {
   background-color: #113366;
@@ -114,11 +122,14 @@ hr {
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                <p class="text-center platitude"><i>
-"Alignment&nbsp;of&nbsp;interest and good&nbsp;corporate&nbsp;governance are&nbsp;the&nbsp;foundations&nbsp;of stable,&nbsp;long&#8209;term&nbsp;partnerships in social&nbsp;impact&nbsp;investing."</i></p>
-                <p class="pull-right">
-                - Michael Kerans
+              <div class="text-center platitude"><i>
+                <p>
+"Alignment&nbsp;of&nbsp;interest and good&nbsp;corporate&nbsp;governance are&nbsp;the&nbsp;foundations&nbsp;of stable,&nbsp;long&#8209;term&nbsp;partnerships in social&nbsp;impact&nbsp;investing."</i>
                 </p>
+                <p class="pull-right">
+                  <small>- Michael Kerans</small>
+                </p>
+              </div>
             </div>
         </div>
     </div>
@@ -132,7 +143,7 @@ hr {
 
         <div class="col-sm-12 col-sm-offset-0 text-center">
             <h1 class="">AHA</h1>
-            <p>Affordable Housing Australia is an advisor and service provider to the community housing sector.</p>
+            <p>Founded in 2008, Affordable Housing Australia is an advisor and service provider to the community housing sector.</p>
             <p>Our mission is to support government, housing providers and investors in the financing of community housing.</p>
           </div>
 
@@ -150,7 +161,7 @@ hr {
 
           <div class="well">
 
-            <p>Help housing providers deliver well-structured social financing initiatives</p>
+            <p>Helping housing providers deliver well-structured social financing initiatives</p>
             <ul class="aha-bullets">
                 <li>Advise on community housing financing strategies</li>
                 <li>Implement social impact reporting frameworks</li>
@@ -170,7 +181,7 @@ hr {
 
           <div class="well">
 
-            <p>Provide independent corporate administration and reporting services to SPVs</p>
+            <p>Providing independent corporate administration and reporting services to SPVs</p>
             <ul class="aha-bullets">
               <li>Execute financial and compliance management</li>
               <li>Perform operational oversight</li>
@@ -188,7 +199,7 @@ hr {
 
     </div>
 
-    <div class="row">
+    <div id="team" class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <hr>
           <div class="row">
@@ -197,11 +208,11 @@ hr {
                   <img src="images/michael.png" class="img-responsive">
               </div>
             </div>
-            <div class="col-md-9">
-              <h4>Michael Kerans</h4>
+            <div class="col-md-9 fully-justified-text">
+              <h4><strong>Michael Kerans</strong></h4>
               <h5>Managing Director</h5>
               <p>
-Michael has over 30 years’ property industry experience, including 8 years
+Michael has over 30 years’ property industry experience, including more than 10 years
 in the development and financing of affordable housing. Michael spent 21 years in the
 unlisted and listed property trust sectors, principally for the ING Group, where he
 had roles in portfolio management, direct property valuations and
@@ -224,18 +235,17 @@ Michael is a registered valuer and licenced Real Estate Agent.
                   <img src="images/vince.png" class="img-responsive">
               </div>
             </div>
-            <div class="col-md-9">
-              <h4>Vince Scully</h4>
+            <div class="col-md-9 fully-justified-text">
+              <h4><strong>Vince Scully</strong></h4>
               <h5>Director</h5>
               <p>
 Vince has over 25 years’ experience in finance and funds management and
 is a chartered accountant. Vince has held senior roles at Macquarie Bank
 where he was involved in complex structured transactions, infrastructure
-advisory and principal transactions and also helped manage the $280 million
+advisory and principal transactions and also helped manage
 Global Infrastructure Fund. Since leaving Macquarie, Vince established
 Calliva Group which was a pioneer in providing real estate financing products
-to self-managed superannuation funds. Calliva also managed $130 million
-on behalf of a select number of retail clients and ran a number of retail
+to self-managed superannuation funds. Calliva also managed a number of retail
 managed funds including a property development fund and a first mortgage fund.
 Vince holds engineering and math degrees from the University of Dublin
 (Trinity College) and an MBA from Boston University. He is a Fellow of the
@@ -250,12 +260,12 @@ Institute of Company Directors.
                   <img src="images/lachlan.png" class="img-responsive">
               </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 fully-justified-text">
               <p>
-                  <h4>Lachlan Douglas</h4>
+                  <h4><strong>Lachlan Douglas</strong></h4>
                   <h5>Director</h5>
                   <p>
-Lachlan has 20 more than years’ experience raising capital for private equity
+Lachlan has 20 years’ experience raising capital for private equity
 partnerships, infrastructure trusts and other institutional investment offerings.
 Lachlan was previously a Director of Infrastructure Capital Group and
 the Managing Director of Principle Advisory Services. Lachlan has
@@ -270,6 +280,63 @@ Technology Sydney and a master degree in applied finance from the Financial Serv
 Institute of Australia.
                   </p>
               </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="advisory_committee" class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <hr>
+          <div class="row">
+            <div class="col-md-12 fully-justified-text">
+              <h4 class="text-center">Advisory Committee</h4>
+              <div class="advisory_committee-member">
+                <div class="advisory_committee-member">
+                    <h4><strong>Carol Croce</strong></h4>
+                    <p>
+Carol has been at the forefront of community housing policy and
+operational development in Australia for two decades.
+Carol is currently working with National Affordable Housing Providers, the
+peak body of NRAS providers, and is a member of the Executive Committee of
+Havelock Housing Association. From 2000 to 2015 she was the Executive Director
+of the Community Housing Federation of Australia and has been a regular member
+of industry and government roundtables. Carol has more than 35 years’ experience
+representing social agenda through mediation with governments at all levels
+for organisations including National Shelter Inc. and
+Australian Youth Policy and Action Coalition.
+                    </p>
+                </div>
+                <h4><strong>Paul Scully</strong></h4>
+                <p>
+Paul has more than 30 years’ experience
+in financial services and investment management. Paul is an actuary by
+training, was Chief Executive Officer for the Asia Pacific region of
+ING Investment Management and a member of its global board.
+He has held executive positions in life insurance and
+retail funds management and directorships in funds management companies.
+Paul is Managing Director of Decision Horizons and maintains a portfolio of
+non-executive directorships, including a trustee of a major public sector
+superannuation fund and a private equity fund-of-funds. Paul has been a
+director of two listed property trusts.
+                </p>
+              </div>
+              <div class="advisory_committee-member">
+                <h4><strong>Les Fallick</strong></h4>
+                <p>
+Les has more than 30 years’ experience as an adviser, capital arranger and
+non-executive director. Les started as a lecturer in economics and then worked for the
+largest union in Australia, government and the private sector.
+Les founded Principle Advisory Services and has been a non-executive director or
+chairman of more than thirty companies, including Lonely Planet,
+Legal & General Asset Management, Gresham Private Equity,
+Development Australia Fund and Infrastructure Capital Group.
+Les is Chairman of the Northern Territory Infrastructure Development
+Fund and was Chairman of the Fred Hollows Foundation from 2010 to 2017.
+                </p>
+              </div>
+
+
             </div>
           </div>
           <br>
